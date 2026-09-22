@@ -46,3 +46,6 @@ O problema que o sistema busca resolver é a organização das informações da 
 ### Diagrama de classes
 
 ![Diagrama de classes do BiblioTech](docs/classes.svg)
+
+
+> Uso de IA: usei o ChatGPT para me ajudar a organizar e revisar a documentação do README.

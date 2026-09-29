@@ -48,4 +48,16 @@ O problema que o sistema busca resolver é a organização das informações da 
 ![Diagrama de classes do BiblioTech](docs/classes.svg)
 
 
+
+## 5. Ajustes identificados durante a implementacao
+
+Durante a implementacao das classes em Java, dois atributos foram necessarios para representar estados que nao estavam explicitos no diagrama inicial:
+
+- `Livro`: atributo `disponivel`, usado para controlar se o livro esta disponivel para emprestimo.
+- `Leitor`: atributo `livrosEmMaos`, usado para controlar quantos livros o leitor possui atualmente emprestados.
+
+Esses atributos foram acrescentados ao codigo porque eram necessarios para implementar as operacoes `estaDisponivel()` e `podePegarEmprestado()`.
+
+
+
 > Uso de IA: usei o ChatGPT para me ajudar a organizar e revisar a documentação do README.

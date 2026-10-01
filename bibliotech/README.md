@@ -58,6 +58,10 @@ Durante a implementacao das classes em Java, dois atributos foram necessarios pa
 
 Esses atributos foram acrescentados ao codigo porque eram necessarios para implementar as operacoes `estaDisponivel()` e `podePegarEmprestado()`.
 
+No desenvolvimento do BiblioTech, o codigo levou a criacao da classe Biblioteca,
+que reune livros, leitores e emprestimos. Essa sexta classe nao aparecia no
+diagrama inicial de APS, mas foi necessaria para coordenar as colecoes e as
+operacoes da biblioteca.
 
 
-> Uso de IA: usei o ChatGPT para me ajudar a organizar e revisar a documentação do README.
+> Uso de IA: usei o ChatGPT para me ajudar a organizar e revisar a documentacao do README.

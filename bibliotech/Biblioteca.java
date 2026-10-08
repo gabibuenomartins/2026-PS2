@@ -100,4 +100,33 @@ public class Biblioteca {
             }
         }
     }
+
+    public String obterAcervoComoTexto() {
+        if (livros.isEmpty()) {
+            return "Nenhum livro cadastrado.";
+        }
+
+        String texto = "";
+
+        for (int i = 0; i < livros.size(); i++) {
+            texto = texto + livros.get(i) + "\n";
+        }
+
+        return texto;
+    }
+
+     public ArrayList<Emprestimo> buscarEmprestimosAtrasados(
+            java.time.LocalDate data) {
+
+        ArrayList<Emprestimo> atrasados =
+            new ArrayList<Emprestimo>();
+
+        for (Emprestimo emprestimo : emprestimos) {
+            if (emprestimo.estaAtrasado(data)) {
+                atrasados.add(emprestimo);
+            }
+        }
+
+        return atrasados;
+    }
 }

@@ -37,7 +37,11 @@ O problema que o sistema busca resolver é a organização das informações da 
 | RNF01 | A consulta de disponibilidade deve responder em menos de 3 segundos. |
 | RNF02 | Somente usuários identificados como bibliotecários podem alterar o acervo. |
 
-## 4. Diagramas
+## 4. Decisão sobre a relação Bibliotecario–Emprestimo
+
+Um bibliotecário pode registrar vários empréstimos, ou nenhum. Por isso, a multiplicidade do lado de Emprestimo é `0..*`.
+
+Cada empréstimo é registrado por um único bibliotecário. Por isso, a multiplicidade do lado de Bibliotecario é `1`.
 
 ### Diagrama de casos de uso
 
